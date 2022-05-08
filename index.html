@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto de JavaScript" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!--slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!--Moment js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/locale/es.min.js" ></script>
+
+    <title>Proyecto JS</title>
+</head>
+
+<body>
+
+    <section id="global">
+
+        <!-- CABECERA -->
+
+        <header>
+            <div id="logo">
+                <h1>proyecto JS</h1>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">inicio</a></li>
+                    <li><a href="#">calculadora</a></li>
+                    <li><a href="#">reloj</a></li>
+                    <li><a href="#">sobre mi</a></li>
+                    <li><a href="#">contacto</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <!-- SLIDER -->
+
+        <div id="slider">
+            <div><img src="img/hojas.jpg" title="hojas"></div>
+            <div><img src="img/rojo.jpg" title="hojas en otoño"></div>
+            <div><img src="img/cielo.jpg" title="cielo"></div>
+        </div>
+
+        <!-- CONTENIDO -->
+
+        <section id="content">
+            <div id="posts">
+
+                <!--se cargan los posts desde un Json -->
+
+            </div>
+
+            <!--Barra lateral-->
+            <aside id="aside">
+
+                <div id="about">
+                    <h4><span>Un caracol :3 </span></h4>
+                    <img src="img/caracol.jpg" alt="caracol">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in lacus purus. Pellentesque
+                        tincidunt, eros a egestas elementum</p>
+                </div>
+
+                <div id="login">
+                    <h4><span>Bienvendio</span></h4>
+
+                    <form action="">
+
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" placeholder="introduce tu nombre...">
+
+                        <label for="email">Correo</label>
+                        <input type="email" id="email" placeholder="introduce tu correo...">
+
+                        <label for="contraseña">Contraseña</label>
+                        <input type="password" id="contraseña" placeholder="introduce tu contraseña...">
+
+                        <input type="submit" value="Entrar" id="form_btn">
+
+                    </form>
+                </div>
+
+            </aside>
+
+            <div class="clearfix"></div>
+
+        </section>
+
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer id="footer">
+        Master en JavaScript 2022
+    </footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
