@@ -55,6 +55,68 @@ $(document).ready(function(){
         $("#posts").append(post);
     });
 
-    
+    //SELECTOR DE TEMA
+
+    let themeSheet = $("#theme");
+
+    $("#to_green").click(function(){
+        themeSheet.attr("href", "css/green.css");
+    });
+
+    $("#to_red").click(function(){
+        themeSheet.attr("href", "css/red.css");
+    });
+
+    $("#to_blue").click(function(){
+        themeSheet.attr("href", "css/blue.css");
+    });
+
+
+    // SCROLL ARRIBA
+
+    $(".up").click(function(e){
+
+        e.preventDefault();
+
+        $("html, body").animate({
+            scrollTop: 0
+        }, 500);
+
+        return false;
+    });
+
+    // LOGIN FALSO CON EL LOCALSTORAGE
+
+    $("#login form").submit(function(){
+
+
+        let user_name = $("#name").val();
+
+        localStorage.setItem("user_name", user_name);
+
+        location.reload();
+
+        
+    });
+
+    let user_name = localStorage.getItem("user_name");
+
+    if(user_name != null && user_name != "undefined"){
+        let login_span = $("#login span");
+        login_span.html("<strong>Bienvenido, " + user_name + "</strong> ");
+        login_span.append("<a href='#' id='logOut'>- Logout -</a>");
+        let logOut =  $("#logOut");
+        logOut.css({
+            "text-decoration": "none",
+            "margin-left" : "20px"
+        });
+
+        $("form").hide();
+
+        logOut.click(function(){
+            localStorage.clear();
+            location.reload();
+        });
+    };
 
 });
