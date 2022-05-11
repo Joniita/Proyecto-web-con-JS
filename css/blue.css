@@ -14,3 +14,25 @@ body{
 .more_btn{
     background-color: #1F87C4;
 }
+
+form input[type="submit"]{
+    background-color: #1F87C4;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid #156897 !important;
+    background: #1F87C4 !important;
+}
+
+#calculadora{
+    background-color: #1F87C4;
+}
+
+button{
+    background-color: #1F87C4;
+    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #1b6c9b ;
+}
+
+button:active{
+    background-color: #136ca0;
+}
